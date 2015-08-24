@@ -1,0 +1,59 @@
+html {
+    height: 100%
+}
+
+body {
+    height: 100%;
+    font-family: sans-serif;
+    line-height: 16px;
+    font-size: 15px;
+    color: #06185c;
+    margin: 0px;
+    /* do not add scroll bars unless overridden on sub-elements */
+    overflow: hidden;
+}
+
+div {
+    background: #eee;
+    margin: 5px;
+    padding: 5px;
+}
+
+div#toolbox {
+    height: 100%;
+    width: 250px;
+    float: right;
+    background: #ffffff;
+    /* add vertical scroll bar if content does not fit */
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+div#map {
+    height: 100%;
+    width: auto;
+    background: #eee;
+    margin: 0px;
+    padding: 0px;
+}
+
+select {
+    width: 100%;
+}
+
+h1 {
+    font-size: 125%;
+    font-weight: bold;
+    background: #888;
+    padding: 0.3em;
+    margin: 0px;
+}
+
+label {
+    font-size: 85%;
+}
+
+div#toolbox {
+    margin: 0px;
+    padding: 0em;
+}

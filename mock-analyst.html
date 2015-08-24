@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Transport Analyst</title>
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+        <link rel="stylesheet" href="mock-analyst.css" />
+    </head>
+    <body style="font-family: sans-serif">
+        <div id="toolbox">
+            <h1>Transport Analyst</h1>
+            <div>
+                <label>Project</label>
+                <select>
+                  <option>Champagne-Ardenne</option>
+                  <option>Marseille</option>
+                  <option>New project...</option>
+                </select>
+            </div>
+            <div>
+                <label>Batch Results</label>
+                <select>
+                  <option>None (interactive single-point)</option>
+                  <option>Current network regional access grid</option>
+                  <option>2020 network regional access grid</option>
+                  <option>Launch new batch...</option>
+                </select>
+            </div>
+            <div>
+                <label>Transport Scenario</label>
+                <select>
+                  <option>None</option>
+                  <optgroup label="Current network">
+                      <option>Baseline</option>
+                      <option>Add route E4</option>
+                      <option>Lower route 8 frequency</option>
+                  </optgroup>
+                  <optgroup label="Projected 2020 network">
+                      <option>Baseline</option>
+                      <option>Remove routes 5 and 7</option>
+                      <option>Double route 3 frequency</option>
+                  </optgroup>
+                  <option>Add transport data...</option>
+                </select>
+            </div>
+            <div>
+                <label>Destinations</label>
+                <select>
+                  <option>None</option>
+                  <optgroup label="Champagne-Ardenne Grid">
+                      <option>Total Population</option>
+                      <option>Children</option>
+                      <option>Adults</option>
+                      <option>Total jobs</option>
+                  </optgroup>
+                  <optgroup label="Census Tracts">
+                      <option>Population 2010</option>
+                      <option>Population 2011</option>
+                      <option>Population 2012</option>
+                  </optgroup>
+                  <option>Add destinations...</option>
+                </select>
+            </div>
+            <img src="graph.png" width=160%>
+            <img src="buttons.png" width=100%>
+        </div>
+        <div id="map"></div>
+        <script src="mock-analyst.js"></script>
+    </body>
+</html>
